@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    /**
+     * Handle the incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  callable  $next
+     * @return mixed
+     */
+    public function handle($request, $next)
+    {
+        // --
+
+        return $next($request);
+    }
+}

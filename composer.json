@@ -1,0 +1,31 @@
+{
+    "name": "cyberpunkcodes/laravel-extended-commands",
+    "description": "Extends the Laravel commands for developers",
+    "keywords": ["laravel", "extended", "commands", "artisan", "make"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CyberPunkCodes"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CyberPunkCodes\\ExtendedCommands\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CyberPunkCodes\\ExtendedCommands\\Providers\\ExtendedCommandsServiceProvider"
+            ]
+        }
+    }
+}
